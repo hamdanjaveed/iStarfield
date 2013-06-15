@@ -16,8 +16,6 @@
 		AC04C643176CD1F400929EF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC04C642176CD1F400929EF4 /* main.m */; };
 		AC04C647176CD1F400929EF4 /* StarfieldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC04C646176CD1F400929EF4 /* StarfieldAppDelegate.m */; };
 		AC04C64A176CD1F400929EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC04C648176CD1F400929EF4 /* Main.storyboard */; };
-		AC04C64C176CD1F400929EF4 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AC04C64B176CD1F400929EF4 /* Shader.fsh */; };
-		AC04C64E176CD1F400929EF4 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AC04C64D176CD1F400929EF4 /* Shader.vsh */; };
 		AC04C651176CD1F400929EF4 /* StarfieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC04C650176CD1F400929EF4 /* StarfieldViewController.m */; };
 		AC04C653176CD1F400929EF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC04C652176CD1F400929EF4 /* Images.xcassets */; };
 		AC04C65A176CD1F400929EF4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04C659176CD1F400929EF4 /* XCTest.framework */; };
@@ -51,8 +49,6 @@
 		AC04C645176CD1F400929EF4 /* StarfieldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarfieldAppDelegate.h; sourceTree = "<group>"; };
 		AC04C646176CD1F400929EF4 /* StarfieldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarfieldAppDelegate.m; sourceTree = "<group>"; };
 		AC04C649176CD1F400929EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC04C64B176CD1F400929EF4 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		AC04C64D176CD1F400929EF4 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		AC04C64F176CD1F400929EF4 /* StarfieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarfieldViewController.h; sourceTree = "<group>"; };
 		AC04C650176CD1F400929EF4 /* StarfieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarfieldViewController.m; sourceTree = "<group>"; };
 		AC04C652176CD1F400929EF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -127,8 +123,6 @@
 				AC04C645176CD1F400929EF4 /* StarfieldAppDelegate.h */,
 				AC04C646176CD1F400929EF4 /* StarfieldAppDelegate.m */,
 				AC04C648176CD1F400929EF4 /* Main.storyboard */,
-				AC04C64B176CD1F400929EF4 /* Shader.fsh */,
-				AC04C64D176CD1F400929EF4 /* Shader.vsh */,
 				AC04C64F176CD1F400929EF4 /* StarfieldViewController.h */,
 				AC04C650176CD1F400929EF4 /* StarfieldViewController.m */,
 				AC04C652176CD1F400929EF4 /* Images.xcassets */,
@@ -243,9 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC04C64E176CD1F400929EF4 /* Shader.vsh in Resources */,
 				AC04C653176CD1F400929EF4 /* Images.xcassets in Resources */,
-				AC04C64C176CD1F400929EF4 /* Shader.fsh in Resources */,
 				AC04C641176CD1F400929EF4 /* InfoPlist.strings in Resources */,
 				AC04C64A176CD1F400929EF4 /* Main.storyboard in Resources */,
 			);
@@ -391,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iStarfield/iStarfield-Prefix.pch";
 				INFOPLIST_FILE = "iStarfield/iStarfield-Info.plist";
@@ -404,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iStarfield/iStarfield-Prefix.pch";
 				INFOPLIST_FILE = "iStarfield/iStarfield-Info.plist";
